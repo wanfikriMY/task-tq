@@ -19,6 +19,39 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue"),
   },
+  {
+    path: "/item",
+    name: "Item",
+    component: () =>
+      import("../views/Item.vue")
+  },
+  {
+    path: "/in",
+    name: "In",
+    component: () =>
+      import("../views/In.vue")
+  },
+  {
+    path: "/out",
+    name: "Out",
+    component: () =>
+      import("../views/Out.vue")
+  },
+  {
+    path: "/history",
+    name: "history",
+    component: () =>
+      import("../views/history.vue")
+  },
+  {
+    path: "/view",
+    name: "View",
+    component: () =>
+      import("../views/view.vue")
+  },
+
+
+
 ];
 
 const router = new VueRouter({
